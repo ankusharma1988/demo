@@ -3,10 +3,16 @@ pipeline {
   options {
         timeout(time: 1, unit: 'HOURS') 
     }    
-  
-         
-                      
-   stage("Code Checkout"){
+  stages {
+     
+                  stage('CleanWorkspace') {
+            steps {
+                cleanWs()
+            }
+        }
+                                
+                                
+                stage("Code Checkout"){
             steps {
                 script {
                                                                 
@@ -14,8 +20,10 @@ pipeline {
                            
                 }
             }
-        }  
-  
+        }      
+                                
+                                
+                                
     stage("Build Step"){
             steps {
                 script {
@@ -29,9 +37,8 @@ pipeline {
                 }
             }
         }
-                                
-                                
-                     
-     
-    }
- }
+
+  
+  }
+
+}
