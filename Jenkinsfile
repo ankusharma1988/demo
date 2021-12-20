@@ -4,9 +4,9 @@ pipeline {
         timeout(time: 1, unit: 'HOURS') 
     }    
   
-                  
-                                
-                stage("Code Checkout"){
+         
+                      
+   stage("Code Checkout"){
             steps {
                 script {
                                                                 
