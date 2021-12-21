@@ -8,9 +8,7 @@ pipeline {
     TESTENV = 'https://hcltechdemosls4.service-now.com/'
     PRODENV = 'https://prodinstance.service-now.com/'
     TESTSUITEID = 'bf8c266d732333005ce769972bf6a777'
-  options {
-        timeout(time: 1, unit: 'HOURS') 
-    }    
+  
   stages {
      
                   stage('CleanWorkspace') {
