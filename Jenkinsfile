@@ -10,16 +10,7 @@ pipeline {
     TESTSUITEID = 'bf8c266d732333005ce769972bf6a777'
    
                              
-                                
-                stage("Code Checkout"){
-            steps {
-                script {
-                                                                
-                    sh "git clone https://github.com/ankusharma1988/demo.git"
-                           
-                }
-            }
-        }      
+       
                                 
        stage('Test') {
          steps {
