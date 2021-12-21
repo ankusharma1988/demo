@@ -24,20 +24,7 @@ pipeline {
                                 
                                 
                                 
-    stage("Build Step"){
-            steps {
-                script {
-                                                                
-                    sh "cd $workspace"; sh "cp -rp $workspace/demo/* $workspace";
-                    sh "ls -lhrt ";
-                    sh "mvn -version  ";
-                    sh "mvn clean install"
-                   
-                    
-                }
-            }
-        }
-
+    
   
   }
 
