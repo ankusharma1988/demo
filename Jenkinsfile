@@ -34,8 +34,8 @@ pipeline {
          steps {
         snInstallApp(credentialsId: "${CREDENTIALS}", url: "${TESTENV}", appSysId: "${APPSYSID}")
         
-        }
-    }                
+         }
+     }                
                                 
     
   
