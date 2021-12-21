@@ -9,13 +9,7 @@ pipeline {
     PRODENV = 'https://prodinstance.service-now.com/'
     TESTSUITEID = 'bf8c266d732333005ce769972bf6a777'
    
-  stages {
-            stage('CleanWorkspace') {
-            steps {
-                cleanWs()
-            }
-        }
-                                
+                             
                                 
                 stage("Code Checkout"){
             steps {
